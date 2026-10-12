@@ -1,0 +1,1304 @@
+{
+ "_public_copy": "Two fields were rewritten for publication and nothing else was touched: 'interpreter' held an absolute path under the author's home directory, and 'git_rev' held the working repository's revision id, which this standalone publication does not carry.",
+ "generated": "2026-09-23T13:50:38.076426+00:00",
+ "generator": "cad/alpha_centauri/sim/mjcf_export.py",
+ "interpreter": "edu/.cadenv/bin/python",
+ "constants_snapshot": {
+  "L1_LATERAL": 49.6,
+  "L1_VERTICAL": 14.3,
+  "L1_HIP_OFFSET": 51.62024721,
+  "PHI_DEG": 73.91738698,
+  "L2_THIGH": 130.0,
+  "L3_CALF": 138.13664159,
+  "LEG_FB": 250.0,
+  "LEG_LR": 90.0,
+  "STANCE_Z": 235.0,
+  "LEG_EXTENSION_LIMIT": 260.0925423423,
+  "LEG_EXTENSION_LIMIT_FRAC": 0.97,
+  "LEG_REACH_MAX": 268.13664159,
+  "CRAWL_SHIFT_CENTRED": 25.5,
+  "CRAWL_STRIDE_HALF": 25.0,
+  "FOOT_SPHERE_R": 15.0,
+  "FOOT_CENTRE_FROM_KNEE": 123.13664159000001,
+  "HIP_Z": 36.0,
+  "TORSO_WALK": 37.0,
+  "TORSO_WORK": 167.0,
+  "RAIL_MID": 102.0,
+  "RAIL_TRAVEL": 150.0,
+  "SERVO_MEASURED_KGCM": 25.0,
+  "TORQUE_LIMIT_NM": 2.4516625,
+  "SERVO_MASS_G": 74.5,
+  "X_BATTERY": -190.0,
+  "X_ELECTRONICS": -150.0,
+  "BATTERY_G": 600.0,
+  "PACK_G": 300.0,
+  "N_PACKS": 2,
+  "BAY_X": 190.0,
+  "BAY_Y": [
+   -31.5,
+   31.5
+  ],
+  "PHONE_ETC_G": 215.0,
+  "TORSO_FULL_H2C_ERA_G": 1538.0,
+  "TORSO_FULL_G": 1453.0,
+  "ARMS_G": 500.0,
+  "BATTERY_RAIL_TRAVEL_RETIRED": 180.0,
+  "solve_leg_alpha_deg": 22.303459717360163,
+  "solve_leg_knee_deg": 43.22920183230016,
+  "solve_leg_ext_mm": 249.3
+ },
+ "assumptions_NOT_measured": {
+  "kp_Nm_per_rad": 60.0,
+  "kv_Nms_per_rad": 2.0,
+  "armature_kgm2_DONOR": 0.0194,
+  "joint_damping_Nms": 0.1,
+  "foot_friction_mu": 1.0,
+  "petg_density_g_cm3_ALL_PARTS": 0.953,
+  "servo_box_uses_UNRESOLVED_height_35mm": true
+ },
+ "step_files": {
+  "cad/alpha_centauri/output/chassis_quarter_inner.step": {
+   "sha256_16": "5784036a7e326425",
+   "mtime": 1790171237.1372955
+  },
+  "cad/alpha_centauri/output/chassis_quarter_outer.step": {
+   "sha256_16": "019447378540f3e5",
+   "mtime": 1790171237.2184255
+  },
+  "cad/alpha_centauri/output/abduction_pod.step": {
+   "sha256_16": "45785b9668272b03",
+   "mtime": 1790171237.3023703
+  },
+  "cad/alpha_centauri/output/chassis_splice_key.step": {
+   "sha256_16": "e30fbb255b73730c",
+   "mtime": 1790171237.2843347
+  },
+  "cad/alpha_centauri/output/rail_way_inner.step": {
+   "sha256_16": "b34dda27869184d4",
+   "mtime": 1790101948.6429548
+  },
+  "cad/alpha_centauri/output/rail_way_outer.step": {
+   "sha256_16": "196a072ba98d66d0",
+   "mtime": 1790101948.7068937
+  },
+  "cad/alpha_centauri/output/rail_way_key.step": {
+   "sha256_16": "27d918a5a444adfb",
+   "mtime": 1790101948.7260048
+  },
+  "cad/alpha_centauri/output/rail_rack.step": {
+   "sha256_16": "c93a82a9f7f16bea",
+   "mtime": 1790101948.9580688
+  },
+  "cad/alpha_centauri/output/rail_carriage.step": {
+   "sha256_16": "30d1f73be4e115b0",
+   "mtime": 1790101949.4074466
+  },
+  "cad/alpha_centauri/output/rail_pawl.step": {
+   "sha256_16": "150d12838d624c5b",
+   "mtime": 1790101949.3423734
+  },
+  "cad/alpha_centauri/output/rail_lever.step": {
+   "sha256_16": "1a283241cfae62b1",
+   "mtime": 1790101949.3643136
+  },
+  "cad/telescopebot/output/waist_box.step": {
+   "sha256_16": "1100a373f583b8fb",
+   "mtime": 1787817817.5453234
+  },
+  "cad/alpha_centauri/output/spine_rack.step": {
+   "sha256_16": "28b2a5771277e68c",
+   "mtime": 1790170831.6476989
+  },
+  "cad/telescopebot/output/chest_box.step": {
+   "sha256_16": "040b59e238ded9d6",
+   "mtime": 1787817821.580455
+  },
+  "cad/alpha_centauri/output/thigh_shell.step": {
+   "sha256_16": "db79bce691d674e5",
+   "mtime": 1787817682.080576
+  },
+  "cad/alpha_centauri/output/thigh_cover.step": {
+   "sha256_16": "7f0c60630f2c2131",
+   "mtime": 1787817682.107577
+  },
+  "cad/alpha_centauri/output/calf.step": {
+   "sha256_16": "e796deaa7dbed993",
+   "mtime": 1787817678.759451
+  },
+  "cad/alpha_centauri/output/horn_adapter.step": {
+   "sha256_16": "fddbb0cafc7c89d7",
+   "mtime": 1787817691.6839354
+  },
+  "cad/alpha_centauri/output/bearing_retainer.step": {
+   "sha256_16": "d7f6370d3f96656e",
+   "mtime": 1787817691.7089362
+  },
+  "cad/alpha_centauri/output/bearing_carrier.step": {
+   "sha256_16": "1c2501327263dfc3",
+   "mtime": 1787817691.724937
+  }
+ },
+ "links": {
+  "chassis": {
+   "mass_kg": 2.148490682879877,
+   "com_m": [
+    -0.047949713541051604,
+    -0.00016803410642604084,
+    0.02876815349731538
+   ],
+   "fullinertia": [
+    0.009359654765492125,
+    0.06945881837691854,
+    0.0765095829307625,
+    5.4134802406431366e-05,
+    -0.0014773008236315496,
+    -4.784529675632021e-07
+   ],
+   "parts": [
+    {
+     "part": "chassis_front_inner",
+     "mass_g": 180.2,
+     "com_mm": [
+      61.9,
+      -0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_front_outer",
+     "mass_g": 229.4,
+     "com_mm": [
+      191.8,
+      -0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_rear_inner",
+     "mass_g": 180.2,
+     "com_mm": [
+      -61.9,
+      0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_rear_outer",
+     "mass_g": 229.4,
+     "com_mm": [
+      -191.8,
+      0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_pod_front_left",
+     "mass_g": 43.9,
+     "com_mm": [
+      218.1,
+      82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_pod_front_right",
+     "mass_g": 43.9,
+     "com_mm": [
+      218.1,
+      -82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_pod_rear_right",
+     "mass_g": 43.9,
+     "com_mm": [
+      -218.1,
+      -82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_pod_rear_left",
+     "mass_g": 43.9,
+     "com_mm": [
+      -218.1,
+      82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_0",
+     "mass_g": 0.7,
+     "com_mm": [
+      -125.0,
+      -71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_1",
+     "mass_g": 0.7,
+     "com_mm": [
+      -125.0,
+      71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_2",
+     "mass_g": 0.7,
+     "com_mm": [
+      0.0,
+      -71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_3",
+     "mass_g": 0.7,
+     "com_mm": [
+      0.0,
+      71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_4",
+     "mass_g": 0.7,
+     "com_mm": [
+      125.0,
+      -71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_5",
+     "mass_g": 0.7,
+     "com_mm": [
+      125.0,
+      71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      62.6,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      187.7,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -62.6,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -187.7,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      62.6,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      187.7,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -62.6,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -187.7,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -125.0,
+      71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -0.0,
+      71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      125.0,
+      71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -125.0,
+      -71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -0.0,
+      -71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      125.0,
+      -71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_rack",
+     "mass_g": 107.7,
+     "com_mm": [
+      102.0,
+      -3.4,
+      30.7
+     ]
+    },
+    {
+     "part": "pack_0_NOMINAL",
+     "mass_g": 300.0,
+     "com_mm": [
+      -190.0,
+      -31.5,
+      16.0
+     ],
+     "box_mm": [
+      75.0,
+      58.0,
+      24.0
+     ]
+    },
+    {
+     "part": "pack_1_NOMINAL",
+     "mass_g": 300.0,
+     "com_mm": [
+      -190.0,
+      31.5,
+      16.0
+     ],
+     "box_mm": [
+      75.0,
+      58.0,
+      24.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      250.0,
+      90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      250.0,
+      -90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      -250.0,
+      90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      -250.0,
+      -90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    }
+   ]
+  },
+  "chassis_aft": {
+   "mass_kg": 2.3634906828798767,
+   "com_m": [
+    -0.05723293676152115,
+    -0.00015274852347735827,
+    0.02742473673459139
+   ],
+   "fullinertia": [
+    0.009510233793698407,
+    0.07194712029287814,
+    0.07904887935530933,
+    5.7486228980496224e-05,
+    -0.0017718504429527695,
+    6.546965295206974e-09
+   ],
+   "parts": [
+    {
+     "part": "chassis_front_inner",
+     "mass_g": 180.2,
+     "com_mm": [
+      61.9,
+      -0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_front_outer",
+     "mass_g": 229.4,
+     "com_mm": [
+      191.8,
+      -0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_rear_inner",
+     "mass_g": 180.2,
+     "com_mm": [
+      -61.9,
+      0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_rear_outer",
+     "mass_g": 229.4,
+     "com_mm": [
+      -191.8,
+      0.0,
+      24.9
+     ]
+    },
+    {
+     "part": "chassis_pod_front_left",
+     "mass_g": 43.9,
+     "com_mm": [
+      218.1,
+      82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_pod_front_right",
+     "mass_g": 43.9,
+     "com_mm": [
+      218.1,
+      -82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_pod_rear_right",
+     "mass_g": 43.9,
+     "com_mm": [
+      -218.1,
+      -82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_pod_rear_left",
+     "mass_g": 43.9,
+     "com_mm": [
+      -218.1,
+      82.1,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_0",
+     "mass_g": 0.7,
+     "com_mm": [
+      -125.0,
+      -71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_1",
+     "mass_g": 0.7,
+     "com_mm": [
+      -125.0,
+      71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_2",
+     "mass_g": 0.7,
+     "com_mm": [
+      0.0,
+      -71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_3",
+     "mass_g": 0.7,
+     "com_mm": [
+      0.0,
+      71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_4",
+     "mass_g": 0.7,
+     "com_mm": [
+      125.0,
+      -71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "chassis_splice_key_5",
+     "mass_g": 0.7,
+     "com_mm": [
+      125.0,
+      71.5,
+      36.0
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      62.6,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      187.7,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -62.6,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -187.7,
+      71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      62.6,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      187.7,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -62.6,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_segment",
+     "mass_g": 17.9,
+     "com_mm": [
+      -187.7,
+      -71.0,
+      78.5
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -125.0,
+      71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -0.0,
+      71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      125.0,
+      71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -125.0,
+      -71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      -0.0,
+      -71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_way_key",
+     "mass_g": 0.1,
+     "com_mm": [
+      125.0,
+      -71.0,
+      74.3
+     ]
+    },
+    {
+     "part": "rail_rack",
+     "mass_g": 107.7,
+     "com_mm": [
+      102.0,
+      -3.4,
+      30.7
+     ]
+    },
+    {
+     "part": "pack_0_NOMINAL",
+     "mass_g": 300.0,
+     "com_mm": [
+      -190.0,
+      -31.5,
+      16.0
+     ],
+     "box_mm": [
+      75.0,
+      58.0,
+      24.0
+     ]
+    },
+    {
+     "part": "pack_1_NOMINAL",
+     "mass_g": 300.0,
+     "com_mm": [
+      -190.0,
+      31.5,
+      16.0
+     ],
+     "box_mm": [
+      75.0,
+      58.0,
+      24.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      250.0,
+      90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      250.0,
+      -90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      -250.0,
+      90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    },
+    {
+     "part": "abduction_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      -250.0,
+      -90.0,
+      36.0
+     ],
+     "box_mm": [
+      45.22,
+      24.72,
+      35.0
+     ]
+    }
+   ]
+  },
+  "torso": {
+   "mass_kg": 1.562294396259857,
+   "com_m": [
+    0.007991571036255637,
+    -0.0026897547356437455,
+    0.17481462865500863
+   ],
+   "fullinertia": [
+    0.013462619536626556,
+    0.008949052767305605,
+    0.00962488432659936,
+    -2.9934192656297147e-05,
+    -0.0006403543817949216,
+    0.0004342059487272968
+   ],
+   "parts": [
+    {
+     "part": "rail_carriage",
+     "mass_g": 222.6,
+     "com_mm": [
+      -0.0,
+      -0.4,
+      86.7
+     ]
+    },
+    {
+     "part": "rail_pawl",
+     "mass_g": 11.1,
+     "com_mm": [
+      -0.0,
+      5.1,
+      90.7
+     ]
+    },
+    {
+     "part": "rail_lever",
+     "mass_g": 6.6,
+     "com_mm": [
+      -0.0,
+      9.0,
+      96.1
+     ]
+    },
+    {
+     "part": "waist_box",
+     "mass_g": 210.9,
+     "com_mm": [
+      -1.5,
+      0.0,
+      112.8
+     ]
+    },
+    {
+     "part": "spine_rack",
+     "mass_g": 84.0,
+     "com_mm": [
+      -0.0,
+      -48.8,
+      281.0
+     ]
+    },
+    {
+     "part": "chest_box_RETRACTED",
+     "mass_g": 255.6,
+     "com_mm": [
+      -8.3,
+      -0.5,
+      185.3
+     ]
+    },
+    {
+     "part": "arm_HALF_NOMINAL",
+     "mass_g": 250.0,
+     "com_mm": [
+      0.0,
+      95.0,
+      197.0
+     ],
+     "box_mm": [
+      40,
+      40,
+      160
+     ]
+    },
+    {
+     "part": "arm_HALF_NOMINAL",
+     "mass_g": 250.0,
+     "com_mm": [
+      0.0,
+      -95.0,
+      197.0
+     ],
+     "box_mm": [
+      40,
+      40,
+      160
+     ]
+    },
+    {
+     "part": "camera_misc_remainder",
+     "mass_g": 271.4,
+     "com_mm": [
+      55.0,
+      0.0,
+      217.0
+     ],
+     "box_mm": [
+      30,
+      90,
+      30
+     ]
+    }
+   ]
+  },
+  "torso_chest": {
+   "mass_kg": 1.7772943962598569,
+   "com_m": [
+    0.00702482755447191,
+    -0.0023643740506090233,
+    0.17435317153088065
+   ],
+   "fullinertia": [
+    0.013574684851752073,
+    0.009374164494186826,
+    0.010142227860463832,
+    -2.587175407222703e-05,
+    -0.0006461157601193646,
+    0.00043614507866328854
+   ],
+   "parts": [
+    {
+     "part": "rail_carriage",
+     "mass_g": 222.6,
+     "com_mm": [
+      -0.0,
+      -0.4,
+      86.7
+     ]
+    },
+    {
+     "part": "rail_pawl",
+     "mass_g": 11.1,
+     "com_mm": [
+      -0.0,
+      5.1,
+      90.7
+     ]
+    },
+    {
+     "part": "rail_lever",
+     "mass_g": 6.6,
+     "com_mm": [
+      -0.0,
+      9.0,
+      96.1
+     ]
+    },
+    {
+     "part": "waist_box",
+     "mass_g": 210.9,
+     "com_mm": [
+      -1.5,
+      0.0,
+      112.8
+     ]
+    },
+    {
+     "part": "spine_rack",
+     "mass_g": 84.0,
+     "com_mm": [
+      -0.0,
+      -48.8,
+      281.0
+     ]
+    },
+    {
+     "part": "chest_box_RETRACTED",
+     "mass_g": 255.6,
+     "com_mm": [
+      -8.3,
+      -0.5,
+      185.3
+     ]
+    },
+    {
+     "part": "arm_HALF_NOMINAL",
+     "mass_g": 250.0,
+     "com_mm": [
+      0.0,
+      95.0,
+      197.0
+     ],
+     "box_mm": [
+      40,
+      40,
+      160
+     ]
+    },
+    {
+     "part": "arm_HALF_NOMINAL",
+     "mass_g": 250.0,
+     "com_mm": [
+      0.0,
+      -95.0,
+      197.0
+     ],
+     "box_mm": [
+      40,
+      40,
+      160
+     ]
+    },
+    {
+     "part": "camera_misc_remainder",
+     "mass_g": 271.4,
+     "com_mm": [
+      55.0,
+      0.0,
+      217.0
+     ],
+     "box_mm": [
+      30,
+      90,
+      30
+     ]
+    }
+   ]
+  },
+  "thigh": {
+   "mass_kg": 0.1446085116778938,
+   "com_m": [
+    -0.000938928043364244,
+    -7.15928503517292e-19,
+    -0.09595368402262044
+   ],
+   "fullinertia": [
+    0.00029153227096146323,
+    0.0002848040712783616,
+    3.673575296396178e-05,
+    -1.627694471043622e-22,
+    -3.221991893256831e-06,
+    1.4581910161529747e-21
+   ],
+   "parts": [
+    {
+     "part": "thigh_shell",
+     "mass_g": 57.7,
+     "com_mm": [
+      1.1,
+      -0.0,
+      -60.6
+     ]
+    },
+    {
+     "part": "thigh_cover",
+     "mass_g": 12.4,
+     "com_mm": [
+      -16.2,
+      -0.0,
+      -119.6
+     ]
+    },
+    {
+     "part": "knee_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      0.0,
+      0.0,
+      -119.4
+     ],
+     "box_mm": [
+      24.72,
+      35.0,
+      45.22
+     ]
+    }
+   ]
+  },
+  "calf": {
+   "mass_kg": 0.03346103850854819,
+   "com_m": [
+    -7.992555734744978e-10,
+    -0.0003354474310153563,
+    -0.042519949115815664
+   ],
+   "fullinertia": [
+    5.384322973846e-05,
+    4.826496892590903e-05,
+    9.60926681946168e-06,
+    8.211174547361084e-14,
+    -1.620596755572886e-12,
+    -4.378035793746178e-07
+   ],
+   "parts": [
+    {
+     "part": "calf",
+     "mass_g": 33.5,
+     "com_mm": [
+      -0.0,
+      -0.3,
+      -42.5
+     ]
+    }
+   ]
+  },
+  "hip_left": {
+   "mass_kg": 0.08384522502310146,
+   "com_m": [
+    0.0,
+    0.0496,
+    0.014300000000000002
+   ],
+   "fullinertia": [
+    1.2719778536598345e-05,
+    1.7809670686598342e-05,
+    2.2318877421656655e-05,
+    0.0,
+    0.0,
+    7.275957614183426e-21
+   ],
+   "parts": [
+    {
+     "part": "hip_pitch_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      0.0,
+      49.6,
+      14.3
+     ],
+     "box_mm": [
+      45.22,
+      35.0,
+      24.72
+     ]
+    },
+    {
+     "part": "joint_parts",
+     "mass_g": 9.3,
+     "com_mm": [
+      0.0,
+      49.6,
+      14.3
+     ],
+     "box_mm": [
+      36,
+      36,
+      20
+     ]
+    }
+   ]
+  },
+  "hip_right": {
+   "mass_kg": 0.08384522502310146,
+   "com_m": [
+    0.0,
+    -0.0496,
+    0.014300000000000002
+   ],
+   "fullinertia": [
+    1.2719778536598345e-05,
+    1.7809670686598342e-05,
+    2.2318877421656655e-05,
+    0.0,
+    0.0,
+    -7.275957614183426e-21
+   ],
+   "parts": [
+    {
+     "part": "hip_pitch_servo",
+     "mass_g": 74.5,
+     "com_mm": [
+      0.0,
+      -49.6,
+      14.3
+     ],
+     "box_mm": [
+      45.22,
+      35.0,
+      24.72
+     ]
+    },
+    {
+     "part": "joint_parts",
+     "mass_g": 9.3,
+     "com_mm": [
+      0.0,
+      -49.6,
+      14.3
+     ],
+     "box_mm": [
+      36,
+      36,
+      20
+     ]
+    }
+   ]
+  }
+ },
+ "variants": {
+  "alpha_centauri_walk_chest": {
+   "station": "walk",
+   "torso_x_mm": 37.0,
+   "brain": "chest",
+   "com_x_mm_analytic": -4.98,
+   "total_mass_kg": 4.9734
+  },
+  "alpha_centauri_walk_aft": {
+   "station": "walk",
+   "torso_x_mm": 37.0,
+   "brain": "aft",
+   "com_x_mm_analytic": -13.07,
+   "total_mass_kg": 4.9734
+  },
+  "alpha_centauri_work_chest": {
+   "station": "work",
+   "torso_x_mm": 167.0,
+   "brain": "chest",
+   "com_x_mm_analytic": 41.48,
+   "total_mass_kg": 4.9734
+  },
+  "alpha_centauri_work_aft": {
+   "station": "work",
+   "torso_x_mm": 167.0,
+   "brain": "aft",
+   "com_x_mm_analytic": 27.77,
+   "total_mass_kg": 4.9734
+  }
+ },
+ "step_files_count": 20,
+ "mass_reconciliation": {
+  "balance_py_ledger_total_g": 4505.0,
+  "model_total_g": 4973.4,
+  "model_minus_ledger_g": 468.0,
+  "rail_parts_sum_g": 491.8,
+  "note": "the delta is NOT the rail-part sum: the ledger predates the waist-rail parts (491.8 g off their STEPs) but this model omits the spine_pawl solid that the ledger's SPINE cluster includes, and the torso-remainder logic pins the torso cluster to TORSO_FULL regardless of the measured chest/waist solids"
+ }
+}
