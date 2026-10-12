@@ -1,0 +1,36 @@
+# Virtual environments — the CAD env is 756 MB and is rebuilt, never shipped.
+# Recreate with:  python3.11 -m venv edu/.cadenv && edu/.cadenv/bin/pip install build123d
+edu/.cadenv/
+cad/.venv/
+.venv/
+venv/
+
+# GENERATED CAD ARTIFACTS. Every one of these is rebuilt by running the
+# module that made it — the design lives in the .py files, not in the mesh.
+# Keeping them out is what stops this repo growing by ~200 MB a session.
+# Curated evidence images are committed under docs/evidence/ instead.
+cad/*/output/
+cad/*/assembly/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Agent-workflow internals — never part of this repository
+.claude/
+.cursor/
+.mcp.json
+CLAUDE.md
+skill-observations/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key

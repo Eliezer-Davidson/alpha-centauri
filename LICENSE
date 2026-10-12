@@ -1,0 +1,12 @@
+All rights reserved. No licence is granted.
+
+Beyond the rights GitHub's Terms of Service grant to visitors of a public
+repository, you may not copy, modify, distribute, sublicense, publish, create
+derivative works from, or train machine-learning models on any part of this
+repository without prior written permission.
+
+Third-party material that this repository builds against -- vendor CAD, vendor
+datasheets, and the donor robot projects it derives geometry from -- remains the
+property of its respective owners under its own licence. Those items are
+identified in THIRD_PARTY_NOTICES.md. This notice covers only the material
+written for this repository.

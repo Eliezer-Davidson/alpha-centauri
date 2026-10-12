@@ -1,0 +1,20 @@
+{
+ "stroke": 250.0,
+ "rod_len_drawn": 340.0,
+ "rod_len_required": 303.0,
+ "dead_length": 37.0,
+ "overhang_drawn": 250.0,
+ "overhang_after_E": 213.0,
+ "body_depth_available": 136.0,
+ "overhang_after_E_B": 77.0,
+ "waist_growth_needed": 77.0,
+ "swept_interference_free_mm3": 0.0,
+ "swept_interference_full_mm3": 1856.1203262780346,
+ "depth_free_today": 68.0,
+ "way_clearance_mm": -1.0,
+ "telescope": {
+  "1": 290.0,
+  "2": 165.0,
+  "3": 123.33333333333333
+ }
+}

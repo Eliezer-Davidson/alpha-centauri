@@ -1,0 +1,488 @@
+{
+ "provenance_generated": "2026-09-23T13:48:10.925791+00:00",
+ "constants_drift_since_export": {},
+ "torque_limit_Nm": 2.4516625,
+ "tau_names": [
+  "abd_fl",
+  "hip_fl",
+  "knee_fl",
+  "abd_fr",
+  "hip_fr",
+  "knee_fr",
+  "abd_rl",
+  "hip_rl",
+  "knee_rl",
+  "abd_rr",
+  "hip_rr",
+  "knee_rr"
+ ],
+ "runs": {
+  "walk_chest": {
+   "variant": "walk_chest",
+   "tag": "crawl",
+   "fall_t": null,
+   "fall_label": null,
+   "stand": {
+    "com_mm": [
+     -11.48,
+     -0.92,
+     269.5
+    ],
+    "root_z_mm": 198.6,
+    "tau_mean": [
+     0.45,
+     0.014,
+     0.5271,
+     0.458,
+     0.0133,
+     0.5345,
+     0.4764,
+     0.011,
+     0.5535,
+     0.4845,
+     0.0102,
+     0.5607
+    ],
+    "tau_max": [
+     0.4778,
+     0.0179,
+     0.5289,
+     0.4859,
+     0.0164,
+     0.536,
+     0.5089,
+     0.0115,
+     0.5545,
+     0.517,
+     0.0109,
+     0.5611
+    ]
+   },
+   "crawl": {
+    "distance_mm": 145.0,
+    "expected_mm": 150.0,
+    "min_margin_mm": 15.0,
+    "min_margin_3ft_mm": 15.0,
+    "min_margin_per_swing_mm": {
+     "fl": 28.1,
+     "fr": 26.6,
+     "rl": 15.0,
+     "rr": 19.2
+    },
+    "deficient_contact_samples": 0,
+    "deficient_contact_s": 0.0,
+    "deficient_contact_pct": 0.0,
+    "tau_max": [
+     1.3848,
+     0.7669,
+     1.1003,
+     1.409,
+     0.6375,
+     1.1016,
+     1.3784,
+     0.5574,
+     1.249,
+     1.4029,
+     0.5574,
+     1.3244
+    ],
+    "saturated_joints_frac": {},
+    "completed": true
+   },
+   "ik_grid_max_err_m": 1.6676834921366295e-09
+  },
+  "work_chest": {
+   "variant": "work_chest",
+   "tag": "crawl",
+   "fall_t": null,
+   "fall_label": null,
+   "stand": {
+    "com_mm": [
+     35.25,
+     -0.92,
+     269.48
+    ],
+    "root_z_mm": 198.7,
+    "tau_mean": [
+     0.5576,
+     0.0027,
+     0.6284,
+     0.5659,
+     0.0029,
+     0.6359,
+     0.367,
+     0.0212,
+     0.4503,
+     0.3747,
+     0.0204,
+     0.4572
+    ],
+    "tau_max": [
+     0.5999,
+     0.0102,
+     0.63,
+     0.6083,
+     0.012,
+     0.6377,
+     0.3881,
+     0.0342,
+     0.4578,
+     0.3958,
+     0.0327,
+     0.4642
+    ]
+   },
+   "crawl": {
+    "distance_mm": 92.0,
+    "expected_mm": 100.0,
+    "min_margin_mm": 2.2,
+    "min_margin_3ft_mm": 2.2,
+    "min_margin_per_swing_mm": {
+     "fl": 3.2,
+     "fr": 2.2,
+     "rl": 39.2,
+     "rr": 44.1
+    },
+    "deficient_contact_samples": 966,
+    "deficient_contact_s": 3.86,
+    "deficient_contact_pct": 16.9,
+    "tau_max": [
+     1.3828,
+     0.7474,
+     1.4607,
+     1.4078,
+     1.9977,
+     1.3168,
+     1.5021,
+     0.7271,
+     1.1355,
+     1.6022,
+     0.8658,
+     1.2302
+    ],
+    "saturated_joints_frac": {},
+    "completed": true
+   },
+   "work_failure_math": {
+    "measured_stand_com_x_mm": 35.25,
+    "shift_used_mm": 25.5,
+    "lateral_shift_for_zero_margin_mm": 19.7,
+    "lateral_shift_for_walk_margin_mm": 45.2,
+    "extension_at_recovery_shift_mm": 263.98,
+    "extension_pct_of_reach": 98.4,
+    "extension_limit_mm": 260.09,
+    "recovery_exceeds_guard": true
+   }
+  },
+  "walk_aft": {
+   "variant": "walk_aft",
+   "tag": "crawl",
+   "fall_t": null,
+   "fall_label": null,
+   "stand": {
+    "com_mm": [
+     -19.62,
+     -0.92,
+     262.71
+    ],
+    "root_z_mm": 198.7,
+    "tau_mean": [
+     0.4309,
+     0.0165,
+     0.5095,
+     0.4388,
+     0.0158,
+     0.5169,
+     0.4948,
+     0.0094,
+     0.5716,
+     0.5029,
+     0.0086,
+     0.5788
+    ],
+    "tau_max": [
+     0.4567,
+     0.0225,
+     0.5124,
+     0.4647,
+     0.021,
+     0.5195,
+     0.5301,
+     0.0105,
+     0.5722,
+     0.5382,
+     0.01,
+     0.5795
+    ]
+   },
+   "crawl": {
+    "distance_mm": 144.6,
+    "expected_mm": 150.0,
+    "min_margin_mm": 10.7,
+    "min_margin_3ft_mm": 10.7,
+    "min_margin_per_swing_mm": {
+     "fl": 32.4,
+     "fr": 31.0,
+     "rl": 10.7,
+     "rr": 14.8
+    },
+    "deficient_contact_samples": 6,
+    "deficient_contact_s": 0.02,
+    "deficient_contact_pct": 0.1,
+    "tau_max": [
+     1.3861,
+     0.7741,
+     1.0602,
+     1.412,
+     0.6312,
+     1.0618,
+     1.3762,
+     0.5574,
+     1.287,
+     1.4007,
+     0.5574,
+     1.4346
+    ],
+    "saturated_joints_frac": {},
+    "completed": true
+   }
+  },
+  "work_aft": {
+   "variant": "work_aft",
+   "tag": "crawl",
+   "fall_t": null,
+   "fall_label": null,
+   "stand": {
+    "com_mm": [
+     21.47,
+     -0.92,
+     262.71
+    ],
+    "root_z_mm": 198.7,
+    "tau_mean": [
+     0.5256,
+     0.004,
+     0.5984,
+     0.5338,
+     0.0036,
+     0.6059,
+     0.3987,
+     0.018,
+     0.4807,
+     0.4066,
+     0.0173,
+     0.4876
+    ],
+    "tau_max": [
+     0.5637,
+     0.0059,
+     0.5995,
+     0.572,
+     0.0053,
+     0.6071,
+     0.4235,
+     0.0274,
+     0.4862,
+     0.4313,
+     0.0259,
+     0.4926
+    ]
+   },
+   "crawl": {
+    "distance_mm": 94.4,
+    "expected_mm": 100.0,
+    "min_margin_mm": 9.4,
+    "min_margin_3ft_mm": 9.4,
+    "min_margin_per_swing_mm": {
+     "fl": 10.7,
+     "fr": 9.4,
+     "rl": 32.2,
+     "rr": 36.9
+    },
+    "deficient_contact_samples": 104,
+    "deficient_contact_s": 0.42,
+    "deficient_contact_pct": 1.8,
+    "tau_max": [
+     1.3822,
+     0.7527,
+     1.2653,
+     1.4062,
+     0.6733,
+     1.2663,
+     1.4604,
+     0.7008,
+     1.1376,
+     1.4971,
+     0.6824,
+     1.146
+    ],
+    "saturated_joints_frac": {},
+    "completed": true
+   }
+  }
+ },
+ "sensitivity_kp280": {
+  "walk_chest": {
+   "variant": "walk_chest",
+   "tag": "crawl_kp280",
+   "fall_t": null,
+   "fall_label": null,
+   "stand": {
+    "com_mm": [
+     -10.49,
+     -0.93,
+     270.06
+    ],
+    "root_z_mm": 199.3,
+    "tau_mean": [
+     0.4648,
+     0.0032,
+     0.519,
+     0.4727,
+     0.0023,
+     0.5262,
+     0.4899,
+     0.0007,
+     0.5411,
+     0.4977,
+     0.0001,
+     0.5483
+    ],
+    "tau_max": [
+     0.4649,
+     0.0033,
+     0.519,
+     0.4728,
+     0.0024,
+     0.5263,
+     0.4901,
+     0.0007,
+     0.5411,
+     0.4978,
+     0.0003,
+     0.5483
+    ]
+   },
+   "crawl": {
+    "distance_mm": 99.8,
+    "expected_mm": 100.0,
+    "min_margin_mm": 16.6,
+    "min_margin_3ft_mm": 16.6,
+    "min_margin_per_swing_mm": {
+     "fl": 28.1,
+     "fr": 26.5,
+     "rl": 16.6,
+     "rr": 20.3
+    },
+    "deficient_contact_samples": 0,
+    "deficient_contact_s": 0.0,
+    "deficient_contact_pct": 0.0,
+    "tau_max": [
+     1.3661,
+     2.063,
+     2.4517,
+     1.3896,
+     1.9943,
+     2.4517,
+     1.3639,
+     2.0808,
+     2.4517,
+     1.3877,
+     2.0808,
+     2.4517
+    ],
+    "saturated_joints_frac": {
+     "knee_fl": 0.0014,
+     "knee_fr": 0.001,
+     "knee_rl": 0.0016,
+     "knee_rr": 0.001
+    },
+    "completed": true
+   }
+  },
+  "work_chest": {
+   "variant": "work_chest",
+   "tag": "crawl_kp280",
+   "fall_t": null,
+   "fall_label": null,
+   "stand": {
+    "com_mm": [
+     36.1,
+     -0.93,
+     270.06
+    ],
+    "root_z_mm": 199.3,
+    "tau_mean": [
+     0.5789,
+     0.0092,
+     0.6189,
+     0.5877,
+     0.0101,
+     0.6269,
+     0.3761,
+     0.0112,
+     0.4404,
+     0.383,
+     0.0105,
+     0.4468
+    ],
+    "tau_max": [
+     0.5792,
+     0.0099,
+     0.6189,
+     0.5879,
+     0.0109,
+     0.6269,
+     0.3761,
+     0.012,
+     0.4408,
+     0.3831,
+     0.0113,
+     0.4472
+    ]
+   },
+   "crawl": {
+    "distance_mm": 99.7,
+    "expected_mm": 100.0,
+    "min_margin_mm": 2.4,
+    "min_margin_3ft_mm": 2.4,
+    "min_margin_per_swing_mm": {
+     "fl": 4.1,
+     "fr": 2.4,
+     "rl": 39.7,
+     "rr": 44.2
+    },
+    "deficient_contact_samples": 259,
+    "deficient_contact_s": 1.04,
+    "deficient_contact_pct": 4.5,
+    "tau_max": [
+     1.366,
+     2.0628,
+     2.4517,
+     1.3895,
+     1.9938,
+     2.4517,
+     1.3979,
+     2.0807,
+     2.4517,
+     1.4182,
+     2.0807,
+     2.4517
+    ],
+    "saturated_joints_frac": {
+     "knee_fl": 0.0017,
+     "knee_fr": 0.001,
+     "knee_rl": 0.0012,
+     "knee_rr": 0.0009
+    },
+    "completed": true
+   }
+  }
+ },
+ "com_heights_mm": {
+  "walk_chest": 269.5,
+  "work_chest": 269.48,
+  "walk_aft": 262.71,
+  "work_aft": 262.71
+ }
+}
