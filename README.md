@@ -1,5 +1,7 @@
 # Alpha Centauri
 
+[![tests](https://github.com/Eliezer-Davidson/alpha-centauri/actions/workflows/tests.yml/badge.svg)](https://github.com/Eliezer-Davidson/alpha-centauri/actions/workflows/tests.yml)
+
 > **Simulation only — nothing has been printed, nothing has been assembled, no motor has turned.**
 > The robot on this page exists as parametric CAD and as a MuJoCo model generated from that CAD.
 > Every number here is a measurement taken off geometry or off a simulation, and each one says which.
