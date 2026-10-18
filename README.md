@@ -1,5 +1,3 @@
-> **Project in progress — may contain inaccuracies.**
-
 # Alpha Centauri
 
 > **Simulation only — nothing has been printed, nothing has been assembled, no motor has turned.**
@@ -32,6 +30,9 @@ parts, with the servos, packs, arms and compute stack entered as nominal box and
 | simulation | WALK crawl **145.0 mm**, 3 cycles, **0 falls**, **15.0 mm** min three-foot support margin |
 | model | **4.9734 kg** — the printed parts' mass, CoM and inertia measured off their 20 STEP solids; servos, packs, arms and compute stack as nominal box/point masses (about half the total) |
 | hardware | **none.** Nothing printed, nothing assembled, no motor has turned |
+| run it | [Quick start](#quick-start): two venvs (build123d CAD lane, MuJoCo sim lane), then `./smoke_test.sh` — one part through all its gates in ~35 s |
+
+*Published as a clean snapshot of a private working repo.*
 
 ---
 
