@@ -9,4 +9,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install build123d trimesh rtree numpy matplotlib pillow
-      - run: CADPY=python ./smoke_test.sh
+      - name: smoke test
+        run: |
+          set -o pipefail
+          CADPY="$(which python)" ./smoke_test.sh 2>&1 | tee out.txt || {
+            tail -n 10 out.txt | while IFS= read -r l; do echo "::error::${l}"; done
+            exit 1; }
